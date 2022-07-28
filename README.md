@@ -13,9 +13,9 @@ Stochastic process in microbial community assembly is overestimated due to rando
 
 Guo, X., Feng, J., Shi, Z., Zhou, X., Yuan, M., Tao, X., Hale, L., Yuan, T., Wang, J., Qin, Y., Zhou, A., Fu, Y., Wu, L., He, Z., Van Nostrand, J.D., Ning, D., Liu, X., Luo, Y., Tiedje, J.M., Yang, Y., Zhou, J., 2018. Climate warming leads to divergent succession of grassland microbial communities. Nature Clim Change 8, 813–818. https://doi.org/10.1038/s41558-018-0254-2
 
-Zhou, J., Ning, D., 2017. Stochastic Community Assembly: Does It Matter in Microbial Ecology? Microbiology and Molecular Biology Reviews 81. https://doi.org/10.1128/mmbr.00002-17
+May, F., Gerstner, K., McGlinn, D.J., Xiao, X., Chase, J.M., 2018. mobsim: An r package for the simulation and measurement of biodiversity across spatial scales. Methods in Ecology and Evolution 9, 1401–1408. https://doi.org/10.1111/2041-210x.12986
 
-Zhou, J., Deng, Y., Zhang, P., Xue, K., Liang, Y., Van Nostrand, J.D., Yang, Y., He, Z., Wu, L., Stahl, D.A., Hazen, T.C., Tiedje, J.M., Arkin, A.P., 2014. Stochasticity, succession, and environmental perturbations in a fluidic ecosystem. Proceedings of the National Academy of Sciences of the United States of America 111, E836. https://doi.org/10.1073/pnas.1324044111
+Ning, D., Deng, Y., Tiedje, J.M., Zhou, J., 2019. A general framework for quantitatively assessing ecological stochasticity. Proc. Natl. Acad. Sci. U.S.A. 116, 16892–16898. https://doi.org/10.1073/pnas.1904623116
 
 Raup, D.M., Crick, R.E., 1979. Measurement of Faunal Similarity in Paleontology. Journal of Paleontology 53, 1213–1227.
 
@@ -23,7 +23,8 @@ Stegen, J.C., Lin, X., Fredrickson, J.K., Chen, X., Kennedy, D.W., Murray, C.J.,
 
 Stegen, J.C., Lin, X., Fredrickson, J.K., Konopka, A.E., 2015. Estimating and mapping ecological processes influencing microbial community assembly. Frontiers in Microbiology 6. https://doi.org/10.3389/fmicb.2015.00370
 
-May, F., Gerstner, K., McGlinn, D.J., Xiao, X., Chase, J.M., 2018. mobsim: An r package for the simulation and measurement of biodiversity across spatial scales. Methods in Ecology and Evolution 9, 1401–1408. https://doi.org/10.1111/2041-210x.12986
+Zhou, J., Deng, Y., Zhang, P., Xue, K., Liang, Y., Van Nostrand, J.D., Yang, Y., He, Z., Wu, L., Stahl, D.A., Hazen, T.C., Tiedje, J.M., Arkin, A.P., 2014. Stochasticity, succession, and environmental perturbations in a fluidic ecosystem. Proceedings of the National Academy of Sciences of the United States of America 111, E836. https://doi.org/10.1073/pnas.1324044111
 
-Ning, D., Deng, Y., Tiedje, J.M., Zhou, J., 2019. A general framework for quantitatively assessing ecological stochasticity. Proc. Natl. Acad. Sci. U.S.A. 116, 16892–16898. https://doi.org/10.1073/pnas.1904623116
+Zhou, J., Ning, D., 2017. Stochastic Community Assembly: Does It Matter in Microbial Ecology? Microbiology and Molecular Biology Reviews 81. https://doi.org/10.1128/mmbr.00002-17
+
 
