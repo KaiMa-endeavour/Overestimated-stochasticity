@@ -1,13 +1,13 @@
 # Overestimated-stochasticity
 Stochastic process in microbial community assembly is overestimated due to random sampling.
 
-- This study constructed seed communities containing 10^4^ taxa (i.e. OTUs) and 10^8^ organisms (i.e. sequences) based on taxonomic composition. A series of seed communities with different β-diversity simulated the ecological processes of dispersal and drift by the R function `cons_seedcomm.R`.
+- This study constructed seed communities containing 10<sup>4</sup> taxa (i.e. OTUs) and 10<sup>8</sup> organisms (i.e. sequences) based on taxonomic composition. A series of seed communities with different β-diversity simulated the ecological processes of dispersal and drift by the R function `cons_seedcomm.R`.
 
 - Samples with different numbers (5000 to 200,000) of reads were randomly picked from the seed communities to simulate real communities. β-diversity and stochasticity of mock communities influenced by different sequencing depths. The R function `cons_mockcomm.R` was used to construct mock communities.
 
 - **Null models** have been developed to quantitatively disentangle the relative importance of deterministic vs. stochastic processes in structuring the compositional variations of biological communities. In this study, two contrasting null models are employed. Therefore, the parameter *abundance* = "shuffle" is added to `NST::tNST` and renamed as `tNSTmod.R`. These two null models represent the heterogeneity and homogeneity of null communities, respectively, corresponding to the options "shuffle" and "region" for *abundance*.
 
-- In addition to the stochastic ratio approach, the **RC~bray~** metric was also employed to quantify the contribution of different ecological processes to the compositional variations of microbial communities. Because it was technically almost impossible to simulate the phylogenetic relationships representing the community assembly process of mock communities, only RC~bray~ was used. The R function `Raup_Crick_Abundance.r` provided by [Stegen et al.](https://github.com/stegen/Stegen_etal_ISME_2013) for RC~bray~ metric analysis.
+- In addition to the stochastic ratio approach, the **RC<SUB>bray</SUB>** metric was also employed to quantify the contribution of different ecological processes to the compositional variations of microbial communities. Because it was technically almost impossible to simulate the phylogenetic relationships representing the community assembly process of mock communities, only RC<SUB>bray</SUB> was used. The R function `Raup_Crick_Abundance.r` provided by [Stegen et al.](https://github.com/stegen/Stegen_etal_ISME_2013) for RC<SUB>bray</SUB> metric analysis.
 
 ## References
 
