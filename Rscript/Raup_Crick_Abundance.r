@@ -51,7 +51,7 @@ raup_crick_abundance <- function(spXsite, plot_names_in_col1 = TRUE, null_model 
 
   ## looping over each pairwise community combination:
   null_dist <- function(i, gamma, spXsite, spXsite.inc, null.one, null.two, occur, abundance, null_model) {
-    if ("shuffle" %in% null_model) {
+    if (null_model == "shuffle") {
       samp.richness <- rowSums(spXsite.inc)
       sp.freqence <- colSums(spXsite.inc)
 
@@ -72,7 +72,7 @@ raup_crick_abundance <- function(spXsite, plot_names_in_col1 = TRUE, null_model 
       com2[com2.int > 0] <- xx[sample.int(length(xx))]
       rm("id", "com2.int")
     }
-    if ("proportional" %in% null_model) {
+    if (null_model == "proportional") {
       ## two empty null communities of size gamma:
       com1 <- rep(0, gamma)
       com2 <- rep(0, gamma)
