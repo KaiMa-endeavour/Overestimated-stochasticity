@@ -13,7 +13,7 @@ null_stoc4 <- function(input_path, output_path, rand = 1000, nworker = 100) {
   res <- lapply(1:length(myfiles), function(i) {
     comm <- fread(myfiles[i])
     comm <- as.data.table(t(comm[, -1]))
-    nr <<- nrow(comm)
+    nr <- nrow(comm)
     cat(paste0("Start calculating the ", i, "-th document(", length(myfiles), "). ", " The file is \"", myfiles[i], "\". "), date(), "\n")
     ecosphere <- tNSTmod(comm = comm, sp.freq = "prop", samp.rich = "fix", swap.method = "not", abundance = "shuffle", rand = rand, nworker = nworker)
     beta_ecosphere <- ecosphere$details$rand.mean
