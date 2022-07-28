@@ -4,11 +4,11 @@
 # Date: 2020/11/25 9:43
 
 
-rarefy_vt <- function(x, depth, prob = NULL, replace = F) {
+rarefy_vt <- function(x, depth, prob = NULL, replace = FALSE) {
   depth <- round(as.numeric(depth), 0)
   stopifnot(is.numeric(x))
   if (depth > sum(x) & replace == F) {
-    replace <- T
+    replace <- TRUE
     warning("replace = TRUE")
   }
   if (is.null(prob)) {
