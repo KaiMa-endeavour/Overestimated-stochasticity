@@ -65,35 +65,19 @@ cons_seedcomm <- function(s_pool = 1e4, n_sim = 1e8, sad_type = "lnorm", drift, 
   metadatac[is.na(metadatac)] <- 0
   metadatac <- metadatac[order(rowSums(metadatac[, -1]), decreasing = T), ]
   (dist_whole <- vegdist(t(metadatac[, -1]), method = dist_method) %>% as.vector())
-  if (is.null(output_path)) {
-    fwrite(metadatac, "/metacomm_0whole.csv")
-  } else {
-    fwrite(metadatac, paste0(output_path, "/metacomm_0whole.csv"))
-  }
+  fwrite(metadatac, paste0(output_path, "/metacomm_0whole.csv"))
 
   cutoff_s <- which(cumsum(rowSums(metadatac[, -1]) / sum(metadatac[, -1])) > 0.8)[1]
   metadataAT <- metadatac[1:cutoff_s, ]
   metadataRT <- metadatac[(cutoff_s + 1):nrow(metadatac), ]
 
   (dist_AT <- vegdist(t(metadataAT[, -1]), method = dist_method) %>% as.vector())
-  if (is.null(output_path)) {
-    fwrite(metadataAT, "/metacomm_abundant.csv")
-  } else {
-    fwrite(metadataAT, paste0(output_path, "/metacomm_abundant.csv"))
-  }
+  fwrite(metadataAT, paste0(output_path, "/metacomm_abundant.csv"))
 
   (dist_RT <- vegdist(t(metadataRT[, -1]), method = dist_method) %>% as.vector())
-  if (is.null(output_path)) {
-    fwrite(metadataRT, "/metacomm_rare.csv")
-  } else {
-    fwrite(metadataRT, paste0(output_path, "/metacomm_rare.csv"))
-  }
+  fwrite(metadataRT, paste0(output_path, "/metacomm_rare.csv"))
 
   dist <- data.table(beta = c(dist_whole, dist_AT, dist_RT), Taxa = c(rep("whole", (ncol(metadatac) - 1) * (ncol(metadatac) - 2) / 2), rep("abundant", (ncol(metadataAT) - 1) * (ncol(metadataAT) - 2) / 2), rep("rare", (ncol(metadataRT) - 1) * (ncol(metadataRT) - 2) / 2)))
-  if (is.null(output_path)) {
-    fwrite(dist, "/beta.csv")
-  } else {
-    fwrite(dist, paste0(output_path, "/beta.csv"))
-  }
+  fwrite(dist, paste0(output_path, "/beta.csv"))
 }
 # cons_seedcomm(drift = drift, dispersal = dispersal, output_path = output_path, n_comm = 3)
