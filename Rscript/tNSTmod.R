@@ -153,7 +153,6 @@ tNSTmod <- function(comm, group = data.frame(x = rep(1, nrow(comm))), meta.group
     cat("Now randomizing by parallel computing. Begin at ", date(), ". Please wait...", "\n")
     clusterEvalQ(c1, library(NST))
     dist.ran <- parSapply(c1, 1:rand, dist.rand, comm, meta.group, dist.method, abundance.weighted, sp.freq, samp.rich, swap.method, abundance, meta.abs)
-    # dist.ran=foreach(1:rand, .packages = "NST", .combine = "cbind") %dopar% dist.rand(comm,meta.group,dist.method,abundance.weighted,sp.freq,samp.rich,swap.method,abundance,meta.abs)
     stopCluster(c1)
   }
   if (length(dim(dist.ran)) == 1) {
