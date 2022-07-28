@@ -7,7 +7,7 @@
 # input_path <- 'C:/Users/KaiMa/Desktop/111'
 # output_path <- 'C:/Users/KaiMa/Desktop/222'
 # seq_dep <- 30000
-cons_mockcomm <- function(input_path, seq_dep, dist_method = "bray", output_path = NULL) {
+cons_mockcomm <- function(input_path, seq_dep, dist_method = "bray", output_path) {
   require(vegan)
   require(tidyfst)
 
