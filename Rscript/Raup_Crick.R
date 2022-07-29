@@ -8,7 +8,7 @@ Raup_Crick <- function(input_path, output_path, null_model = "shuffle", reps = 1
   require(tidyfst)
   require(ecodist)
   
-  myfiles <- Sys.glob(paste0(input_path, "metacomm_*.csv"))
+  myfiles <- Sys.glob(paste0(input_path, "/metacomm_*.csv"))
   # source("C:/Users/KaiMa/Desktop/Raup_Crick_Abundance.r")
   source('./Raup_Crick_Abundance.r')
   
