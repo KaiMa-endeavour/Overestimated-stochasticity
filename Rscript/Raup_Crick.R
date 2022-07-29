@@ -10,7 +10,7 @@ Raup_Crick <- function(input_path, output_path, null_model = "shuffle", reps = 1
   
   myfiles <- Sys.glob(paste0(input_path, "metacomm_*.csv"))
   # source("C:/Users/KaiMa/Desktop/Raup_Crick_Abundance.r")
-  source('/clusterfs/node1/makai/00.ScriptR/01.stochasticity/rc/Raup_Crick_Abundance.r')
+  source('./Raup_Crick_Abundance.r')
   
   res <- sapply(1:length(myfiles), function(i) {
     comm <- fread(myfiles[i])
