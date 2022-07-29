@@ -42,6 +42,7 @@ null_stoc4 <- function(input_path, output_path, rand = 1000, nworker = 100) {
     res[[i]][[2]]
   }) %>% rbindlist() %>% mutate_dt(Taxa = c(rep('whole', nr*(nr-1)/2), rep('abundant', nr*(nr-1)/2), rep('rare', nr*(nr-1)/2)))
   
+  if (!dir.exists(output_path)) dir.create(output_path)
   fwrite(beta, paste0(output_path, "/nullstoc_beta.csv"))
   fwrite(ST, paste0(output_path, "/nullstoc_ST.csv"))
 }
