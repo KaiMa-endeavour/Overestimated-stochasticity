@@ -3,7 +3,7 @@ Stochastic process in microbial community assembly is overestimated due to rando
 
 - This study constructed seed communities containing 10<sup>4</sup> taxa (i.e. OTUs) and 10<sup>8</sup> organisms (i.e. sequences) based on taxonomic composition. A series of seed communities with different β-diversity simulated the ecological processes of dispersal and drift by the R function `cons_seedcomm.R`.
 
-- Samples with different numbers (5000 to 200,000) of reads were randomly picked from the seed communities to simulate real communities. β-diversity and stochasticity of mock communities influenced by different sequencing depths. The R function `cons_mockcomm.R` was used to construct mock communities.
+- Samples with different numbers (5000 to 200,000) of individuals were randomly picked from the seed communities to simulate real communities. β-diversity and stochasticity of mock communities influenced by different sequencing depths. The R function `cons_mockcomm.R` was used to construct mock communities.
 
 - **Null models** have been developed to quantitatively disentangle the relative importance of deterministic vs. stochastic processes in structuring the compositional variations of biological communities. In this study, two contrasting null models are employed. Therefore, the parameter *abundance* = "shuffle" is added to `NST::tNST` and renamed as `tNSTmod.R`. These two null models represent the heterogeneity and homogeneity of null communities, respectively, corresponding to the options "shuffle" and "region" for *abundance*.
 
