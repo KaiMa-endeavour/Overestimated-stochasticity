@@ -4,7 +4,7 @@
 # Date: 2020/11/25 9:43
 
 
-rarefy_vt <- function(x, depth, prob = NULL, replace = FALSE) {
+rarefy_vt <- function(x, depth, prob = NULL, prob_dec = FALSE, replace = FALSE) {
   depth <- round(as.numeric(depth), 0)
   stopifnot(is.numeric(x))
   if (depth > sum(x) & replace == F) {
@@ -14,7 +14,9 @@ rarefy_vt <- function(x, depth, prob = NULL, replace = FALSE) {
   if (is.null(prob)) {
     prob <- prob
   } else {
-    prob <- prob[match(x, sort(x, decreasing = T))]
+    if (prob_dec) {
+      prob <- prob[match(x, sort(x, decreasing = T))]
+    }
     prob <- rep(prob, x)
   }
   y <- sample(x = rep(1:length(x), x), size = depth, prob = prob, replace = replace)
