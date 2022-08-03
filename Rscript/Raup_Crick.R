@@ -17,7 +17,7 @@ Raup_Crick <- function(input_path, output_path, null_model = "shuffle", reps = 1
     comm <- t(comm[, -1])
     comm <- apply(comm, 2, as.numeric)
     cat(paste0("Start calculating the ", i, "-th document(", length(myfiles), "). ", " The file is \"", myfiles[i], "\". "), date(), "\n")
-    rc <- raup_crick_abundance(comm, plot_names_in_col1 = F, , null_model = null_model, reps = reps, nworker = nworker) %>% as.vector()
+    rc <- raup_crick_abundance(comm, plot_names_in_col1 = F, null_model = null_model, reps = reps, nworker = nworker) %>% as.vector()
   })
   colnames(res) <- c('whole', 'abundant', 'rare')
   if (!dir.exists(output_path)) dir.create(output_path)
