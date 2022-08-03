@@ -9,6 +9,8 @@ Stochastic process in microbial community assembly is overestimated due to rando
 
 - In addition to the stochastic ratio approach, the **RC<SUB>bray</SUB>** metric was also employed to quantify the contribution of different ecological processes to the compositional variations of microbial communities. Because it was technically almost impossible to simulate the phylogenetic relationships representing the community assembly process of mock communities, only RC<SUB>bray</SUB> was used. The R function `Raup_Crick_Abundance.r` provided by [Stegen et al.](https://github.com/stegen/Stegen_etal_ISME_2013) for RC<SUB>bray</SUB> metric analysis.
 
+The primary data used in the study are available at [https://github.com/KaiMa-endeavour/Overestimated-stochasticity/releases/tag/data](https://github.com/KaiMa-endeavour/Overestimated-stochasticity/releases/tag/data).
+
 ## References
 
 Guo, X., Feng, J., Shi, Z., Zhou, X., Yuan, M., Tao, X., Hale, L., Yuan, T., Wang, J., Qin, Y., Zhou, A., Fu, Y., Wu, L., He, Z., Van Nostrand, J.D., Ning, D., Liu, X., Luo, Y., Tiedje, J.M., Yang, Y., Zhou, J., 2018. Climate warming leads to divergent succession of grassland microbial communities. Nature Clim Change 8, 813–818. https://doi.org/10.1038/s41558-018-0254-2
