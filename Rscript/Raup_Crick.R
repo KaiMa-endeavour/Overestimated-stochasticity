@@ -4,7 +4,7 @@
 # Date: 2021/1/22 17:54
 
 
-Raup_Crick <- function(input_path, output_path, null_model = "shuffle", reps = 100, nworker = 50) {
+Raup_Crick <- function(input_path, output_path, null_model = "shuffle", reps = 1000, nworker = 100) {
   require(tidyfst)
   require(ecodist)
   
