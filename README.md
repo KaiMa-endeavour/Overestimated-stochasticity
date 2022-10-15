@@ -3,6 +3,7 @@ Stochastic process in microbial community assembly is overestimated due to rando
 
 Ma, K., & Tu, Q. (2022). Random sampling associated with microbial profiling leads to overestimated stochasticity inference in community assembly. Frontiers in Microbiology, 13, 1011269. https://doi.org/10.3389/fmicb.2022.1011269
 
+## Methods
 - The seed communities containing 10<sup>4</sup> taxa and 10<sup>8</sup> organisms based on taxonomic composition were constructed in this study. The ecological processes, such as dispersal and drift, were simulated by the R function `cons_seedcomm`, generating a series of seed communities with different β-diversity.
 
 - Samples with different numbers (5000 to 200,000) of individuals were randomly picked from the seed communities to simulate real communities. β-diversity and stochasticity of mock communities influenced by the different sequencing depths. The R function `cons_mockcomm` was used to construct mock communities.
