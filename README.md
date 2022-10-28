@@ -6,7 +6,7 @@ Ma, K., & Tu, Q. (2022). Random sampling associated with microbial profiling lea
 ## Methods
 - The seed communities containing 10<sup>4</sup> taxa and 10<sup>8</sup> organisms based on taxonomic composition were constructed in this study. The ecological processes, such as dispersal and drift, were simulated by the R function `cons_seedcomm`, generating a series of seed communities with different β-diversity.
 
-- Samples with different numbers (5000 to 200,000) of individuals were randomly picked from the seed communities to simulate real communities. β-diversity and stochasticity of mock communities influenced by the different sequencing depths. The R function `cons_mockcomm` was used to construct mock communities.
+- Individuals with different numbers (5000 to 200,000) were randomly picked from the seed community to simulate the real communities. β-diversity and stochasticity of mock communities influenced by the different sequencing depths. The R function `cons_mockcomm` was used to construct mock communities.
 
 - **Null models** have been developed to quantitatively disentangle the relative importance of deterministic vs. stochastic processes in structuring the compositional variations of biological communities. In this study, two contrasting null models are employed. Therefore, the parameter *abundance* = "shuffle" is added to `NST::tNST` and renamed as `tNSTmod`. The two null models generates heterogeneous and homogeneous null communities, corresponding to the *abundance* options "shuffle" and "region", respectively.
 
