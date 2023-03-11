@@ -1,7 +1,7 @@
 # @Project: RandomSampling
 # @File: cons_seedcomm.R
 # @Author: Kai Ma
-# Date: 2020/11/24 21:23
+# Date: 24/11/2020
 # Ref: May, F., Gerstner, K., McGlinn, D.J., Xiao, X., Chase, J.M., 2018. mobsim: An r package for the simulation and measurement of biodiversity across spatial scales. Methods in Ecology and Evolution 9, 1401–1408. https://doi.org/10.1111/2041-210x.12986
 
 
