@@ -1,7 +1,7 @@
 # @Project: RandomSampling
 # @File: rarefy_vt.R
 # @Author: Kai Ma
-# Date: 2020/11/25 9:43
+# Date: 25/11/2020
 
 
 rarefy_vt <- function(x, depth, prob = NULL, prob_dec = FALSE, replace = FALSE) {
