@@ -1,7 +1,7 @@
 # @Project: RandomSampling
 # @File: cons_mockcomm.R
 # @Author: Kai Ma
-# Date: 2020/11/25 10:02
+# Date: 25/11/2020
 
 
 # input_path <- 'C:/Users/KaiMa/Desktop/111'
