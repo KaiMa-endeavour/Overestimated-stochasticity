@@ -1,7 +1,7 @@
 # @Project: RandomSampling
 # @File: Raup_Crick_Abundance.r
 # @Author: Stegen James C.
-# Date: 2021/1/12 10:31
+# Date: 12/1/2021
 # Ref: Stegen, J.C., Lin, X., Fredrickson, J.K., Chen, X., Kennedy, D.W., Murray, C.J., Rockhold, M.L., Konopka, A., 2013. Quantifying community assembly processes and identifying features that impose them. The ISME Journal 7, 2069–2079. https://doi.org/10.1038/ismej.2013.93
 # Github URL: https://github.com/stegen/Stegen_etal_ISME_2013
 # @Reviser: Kai Ma
