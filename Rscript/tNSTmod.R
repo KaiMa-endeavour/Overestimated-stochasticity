@@ -1,7 +1,7 @@
 # @Project: RandomSampling
 # @File: tNSTmod.R
 # @Author: Daliang Ning
-# Date: 2020/12/18 14:45
+# Date: 18/12/2020
 # Ref: Ning, D., Deng, Y., Tiedje, J.M., Zhou, J., 2019. A general framework for quantitatively assessing ecological stochasticity. Proc. Natl. Acad. Sci. U.S.A. 116, 16892–16898. https://doi.org/10.1073/pnas.1904623116
 # @Reviser: Kai Ma
 
