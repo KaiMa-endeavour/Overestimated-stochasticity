@@ -1,7 +1,7 @@
 # @Project: RandomSampling
 # @File: null_stoc4.R
 # @Author: Kai Ma
-# Date: 2020/12/20 19:58
+# Date: 20/12/2020
 
 
 null_stoc4 <- function(input_path, output_path, rand = 1000, nworker = 100) {
@@ -14,7 +14,6 @@ null_stoc4 <- function(input_path, output_path, rand = 1000, nworker = 100) {
     comm <- fread(myfiles[i])
     comm <- as.data.table(t(comm[, -1]))
     nr <- nrow(comm)
-    cat(paste0("Start calculating the ", i, "-th document(", length(myfiles), "). ", " The file is \"", myfiles[i], "\". "), date(), "\n")
     ecosphere <- tNSTmod(comm = comm, sp.freq = "prop", samp.rich = "fix", swap.method = "not", abundance = "shuffle", rand = rand, nworker = nworker)
     beta_ecosphere <- ecosphere$details$rand.mean
     ST_ecosphere <- ecosphere$index.pair$ST.ij.bray
