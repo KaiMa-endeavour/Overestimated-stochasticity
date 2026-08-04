@@ -7,8 +7,7 @@
 null_stoc4 <- function(input_path, output_path, rand = 1000, nworker = 100) {
   require(NST)
   require(tidyfst)
-  myfiles <<- Sys.glob(paste0(input_path, "/metacomm_*.csv"))
-  # source("C:/Users/KaiMa/Desktop/nullstoc/tNSTmod.R")
+  myfiles <- Sys.glob(paste0(input_path, "/metacomm_*.csv"))
   source("./tNSTmod.R")
   res <- lapply(1:length(myfiles), function(i) {
     comm <- fread(myfiles[i])
